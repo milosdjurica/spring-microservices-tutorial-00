@@ -16,21 +16,22 @@ public class InventoryServiceApplication {
     }
 
 
-//    creating data at the program start
+    //    creating data at the program start
     @Bean
-    public CommandLineRunner loadData(InventoryRepository inventoryRepository){
+    public CommandLineRunner loadData(InventoryRepository inventoryRepository) {
 
         return args -> {
-            Inventory inventory = new Inventory();
-            inventory.setSkuCode("First try");
-            inventory.setQuantity(10);
 
-            Inventory inventory1 = new Inventory();
-            inventory1.setSkuCode("Second");
-            inventory1.setQuantity(4);
-
-            inventoryRepository.save(inventory);
-            inventoryRepository.save(inventory1);
+//            Inventory inventory = new Inventory();
+//            inventory.setSkuCode("First try");
+//            inventory.setQuantity(10);
+//
+//            Inventory inventory1 = new Inventory();
+//            inventory1.setSkuCode("Second");
+//            inventory1.setQuantity(4);
+//
+//            inventoryRepository.save(inventory);
+//            inventoryRepository.save(inventory1);
 
         };
     }
