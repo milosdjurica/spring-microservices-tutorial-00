@@ -17,12 +17,12 @@ public class InventoryController {
     private final InventoryService inventoryService;
 
 //    http://localhost:8082/api/intentory/Firsttry
-//    http://localhost:8082/api/intentory?sku_code=First&sku_code=Second
+//    http://localhost:8082/api/inventory?skuCodes=First&skuCodes=Second
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<InventoryGetDto> isInStock(@RequestParam List<String> skuCodes) {
-        return inventoryService.isInStock(skuCodes);
+    public List<InventoryGetDto> isInStock(@RequestParam List<String> skuCode) {
+        return inventoryService.isInStock(skuCode);
     }
 
 }

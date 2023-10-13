@@ -16,16 +16,16 @@ public class InventoryService {
     private final InventoryRepository inventoryRepository;
 
     @Transactional(readOnly = true)
-    public List<InventoryGetDto> isInStock(List<String> skuCodes) {
-        return inventoryRepository.findBySkuCodeIn(skuCodes)
+    public List<InventoryGetDto> isInStock(List<String> skuCode) {
+        return inventoryRepository.findBySkuCodeIn(skuCode)
                 .stream()
                 .map(inventory ->
                         InventoryGetDto.builder()
                                 .skuCode(inventory.getSkuCode())
                                 .isInStock(inventory.getQuantity() > 0)
                                 .build()
-                ).toList()
-                ;
+                ).toList();
     }
+
 
 }
