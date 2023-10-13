@@ -14,7 +14,8 @@ target/
 
 
 .idea
-*/applications.properties
+/product-service/src/main/resources/application.properties
+/*/applications.properties
 
 
 ### Eclipse ###
