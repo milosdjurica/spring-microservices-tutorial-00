@@ -23,7 +23,7 @@ public class InventoryServiceApplication {
         return args -> {
 
 //            Inventory inventory = new Inventory();
-//            inventory.setSkuCode("First try");
+//            inventory.setSkuCode("First");
 //            inventory.setQuantity(10);
 //
 //            Inventory inventory1 = new Inventory();
