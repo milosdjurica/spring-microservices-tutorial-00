@@ -12,6 +12,11 @@ target/
 *.iml
 *.ipr
 
+
+.idea
+*/applications.properties
+
+
 ### Eclipse ###
 .apt_generated
 .classpath
