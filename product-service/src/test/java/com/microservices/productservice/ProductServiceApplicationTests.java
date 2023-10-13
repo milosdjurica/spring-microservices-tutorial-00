@@ -47,6 +47,9 @@ class ProductServiceApplicationTests {
     @Test
     void shouldCreateProduct() throws Exception {
 
+//        clear everything to get initial state
+        productRepository.deleteAll();
+
         ProductCreateDto productRequest = getProductRequest();
 
         String productRequestString = objectMapper.writeValueAsString(productRequest);
